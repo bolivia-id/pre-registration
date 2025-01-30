@@ -183,12 +183,6 @@ public class DataSyncServiceUtil {
 	private String popUrl;
 
 	/**
-	 * Reference for ${pob.url} from property file
-	 */
-	@Value("${pob.url}")
-	private String pobUrl;
-	
-	/**
 	 * Reference for ${popdwna.url} from property file
 	 */
 	@Value("${popdwna.url}")
