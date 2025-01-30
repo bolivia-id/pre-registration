@@ -182,6 +182,30 @@ public class DataSyncServiceUtil {
 	@Value("${pop.url}")
 	private String popUrl;
 
+	/**
+	 * Reference for ${pob.url} from property file
+	 */
+	@Value("${pob.url}")
+	private String pobUrl;
+	
+	/**
+	 * Reference for ${popdwna.url} from property file
+	 */
+	@Value("${popdwna.url}")
+	private String popdwnaUrl;
+
+	/**
+	 * Reference for ${poms.url} from property file
+	 */
+	@Value("${poms.url}")
+	private String pomsUrl;
+	
+	/**
+	 * Reference for ${polb.url} from property file
+	 */
+	@Value("${polb.url}")
+	private String polbUrl;
+
 
 	/**
 	 * Reference for ${booking.resource.url} from property file
@@ -623,7 +647,13 @@ public class DataSyncServiceUtil {
 					jsonObject.put(poiUrl, prepareDocumentMetaData(documentMultipartResponseDTO));
 				} else if (documentMultipartResponseDTO.getDocCatCode().equals(RequestCodes.POR.getCode())) {
 					jsonObject.put(porUrl, prepareDocumentMetaData(documentMultipartResponseDTO));
-				} else if (documentMultipartResponseDTO.getDocCatCode().equals(RequestCodes.POP.getCode())) {
+				}else if (documentMultipartResponseDTO.getDocCatCode().equals(RequestCodes.POLB.getCode())) {
+					jsonObject.put(polbUrl, prepareDocumentMetaData(documentMultipartResponseDTO));
+				}else if (documentMultipartResponseDTO.getDocCatCode().equals(RequestCodes.POMS.getCode())) {
+					jsonObject.put(pomsUrl, prepareDocumentMetaData(documentMultipartResponseDTO));
+				}else if (documentMultipartResponseDTO.getDocCatCode().equals(RequestCodes.POPDWNA.getCode())) {
+					jsonObject.put(popdwnaUrl, prepareDocumentMetaData(documentMultipartResponseDTO));
+				}else if (documentMultipartResponseDTO.getDocCatCode().equals(RequestCodes.POP.getCode())) {
 					jsonObject.put(popUrl, prepareDocumentMetaData(documentMultipartResponseDTO));
 				} else if (documentMultipartResponseDTO.getDocCatCode().equals(RequestCodes.POD.getCode())
 						|| documentMultipartResponseDTO.getDocCatCode().equals(RequestCodes.POB.getCode())) {

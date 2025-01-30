@@ -14,7 +14,15 @@ public enum DocumentMapping {
 
 	POE("proofOfException", "POE"),
 
-	POP("proofOfPhoto", "POP");
+	POP("proofOfPhoto", "POP"),
+	
+	POB("proofOfDateOfBirth", "POB"),
+	
+	POMS("proofOfMilitaryService", "POMS"),
+	
+	POPDWNA("proofOfProfessionalDWNA", "POPDWNA"),
+	
+	POLB("proofOfLiveBirth", "POLB");
 
 	private final String attributeName;
 

@@ -26,5 +26,14 @@ public class DocumentIdentity {
 
 	/** Proof of Consent. */
 	private IdentityJsonValues poc;
+	
+	/** Proof of MilitaryService. */
+	private IdentityJsonValues poms;
+	
+	/** Proof of ProfessionalDegreeWithNationalAccreditation. */
+	private IdentityJsonValues popdwna;
+	
+	/** Proof of Live Birth. */
+	private IdentityJsonValues polb;
 
 }

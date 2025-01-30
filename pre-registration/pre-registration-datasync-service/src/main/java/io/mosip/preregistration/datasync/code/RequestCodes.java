@@ -23,7 +23,10 @@ public enum RequestCodes {
 	POR("POR"),
 	POD("POD"),
 	POB("POB"),
-	POP("POP");
+	POP("POP"),
+	POMS("POMS"),
+	POPDWNA("POPDWNA"),
+	POLB("POLB");
 	
 	/**
 	 * @param code
